@@ -6,7 +6,7 @@ import model.Quarto;
 public class EstadoAguardando implements EstadoQuarto {
     @Override
     public void proximaEstado(Quarto quarto) {
-        quarto.setEstado(new EstadoDisponivel());
+        quarto.setEstado(new EstadoLimpando());
     }
 
     @Override
