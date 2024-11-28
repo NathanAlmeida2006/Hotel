@@ -1,15 +1,15 @@
 package interfaces.impls;
 
 import interfaces.EstadoQuarto;
+import model.Quarto;
 
 public class EstadoReservado implements EstadoQuarto {
     @Override
-    public void proximaEstado() {
-
+    public void proximaEstado(Quarto quarto) {
+        quarto.setEstado(new EstadoLimpando());
     }
 
     @Override
     public String getEstado() {
-        return "";
-    }
+        return "Reservado";    }
 }
